@@ -15,12 +15,12 @@ namespace Testing7 //Paiza C099折り紙の貼り合わせ
 
             int paper = int.Parse(paramsArr[0]);
             int widthLength = int.Parse(paramsArr[1]);
-            int overlapArea = 0; // to avoid compiler error (means the variable cannot be used inside the loop without defining it outside)
+            int overlapArea = 0; 
 
             for (int i = 1; i < paper; i++)
             {
                 Input = Console.ReadLine();
-                overlapArea += int.Parse(Input); // This is the way to add up the overlapArea
+                overlapArea += int.Parse(Input);
             }
 
             Console.WriteLine((paper * widthLength - overlapArea) * widthLength);
